@@ -16,3 +16,4 @@ TODO
 
 * Unbounce - Ferramenta para criação de landing pages e testes A/B para não-programadores: http://guides.rubyonrails.org/getting_started.html
 * Ash Maurya - Ele criou uma metodologia muito interessante para desenvolvimento de startups de tecnologia: http://practicetrumpstheory.com
+* Twitter Bootstrap 2.3.2 - Documentação do framework de CSS usado: http://getbootstrap.com/2.3.2/
