@@ -1,0 +1,85 @@
+<%= content_for :title, "Title" %>
+
+<div class="container-narrow">
+  <div class="row-fluid marketing">
+    <div class="text-center">
+      <%= image_tag "http://placehold.it/255x56&text=Logo", :style => "margin: 15px 0" %>
+      <%= image_tag "http://placehold.it/759x240&text=Imagem Lindona", :style => "margin: 15px 0" %>
+      <h1>Proposta Direta e Objetiva</h1>
+      <p>Reforce a proposta do site aqui!</p>
+    </div>
+  </div>
+
+  <div class="row-fluid marketing">
+  
+    <div class="span6">
+      <h3>Mais sobre o serviço</h3>
+      <p>
+      Texto mais detalhado sobre o produto ou serviço em questão.
+      Pode ser uma explicação do produto ou da promoção que estamos oferecendo.
+      </p>
+  
+      <h4><span class="badge badge-info">1</span> A Grande Vantagem</h4>
+      <p>
+      This is the first and best key benefit or feature that describes the value of your product.
+      </p>
+  
+      <h4><span class="badge badge-info">2</span> A Segunda Maior Vantagem</h4>
+      <p>
+      This is the first and best key benefit or feature that describes the value of your product.
+      </p>
+  
+      <h4><span class="badge badge-info">3</span> A Terceira Maior Vantagem</h4>
+      <p>
+      This is the first and best key benefit or feature that describes the value of your product.
+      </p>
+    </div>
+  
+  
+    <div class="span6">
+      <div class="well">
+        <h3>Demontração Grátis</h3>
+  
+        <p>
+        Explore a ferramenta no seu ritmo e descubra como sua empresa pode se beneficiar da plataforma.
+        </p>
+  
+        <hr />
+  
+        <%= form_for @lead do |form| %>
+          <%= form.label :nome %>
+          <%= form.text_field :nome %><br />
+  
+          <%= form.label :email, :required => true %>
+          <%= form.email_field :email, :required => true %><br />
+  
+          <%= submit_tag "Ver Demonstração", :class => "btn btn-large btn-warning" %>
+
+          <hr />
+  
+          <p>
+            <small>
+              Estamos comprometidos em resguardar suas informações. Conheça nossa <%= link_to "Política de privacidade" %>.
+            </small>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  
+    <div class="span12">
+      <div class="quote text-center" style="margin: 20px 0;">
+        <p>
+        “I have been using Great Company for all my company needs for the last 3 years and couldn’t be happier with their service and expertise. They’ve surpassed all of my expectations and customer service!”
+  
+        </p>
+        <%= image_tag "http://placehold.it/80x80", :class => "img-circle", :style => "margin-top: 20px" %>
+        <p>
+  
+        <strong>Mark Mainwright</strong><br />
+        Founder & CEO, Another Great Company
+        </p>
+      </div>
+    </div>
+  
+  </div>
+</div>
