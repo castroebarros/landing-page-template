@@ -1,10 +1,15 @@
-== Landing Page para Programadores
+== Landing Page Template
 
 Projeto em Rails 3.2  para criação de Landing Pages clássicas no ponto de 
-ser clonado, adaptado e publicado no Heroku.
+ser clonado, editado e publicado no Heroku.
 
 Ideal para iniciar rapidamente a validação de ideias de negócios sem 
 gastar grana com ferramentas como Unbounce ou similares.
+
+
+== Demonstração
+
+http://landing-page-template.herokuapp.com
 
 
 == Como usar
