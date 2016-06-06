@@ -4,7 +4,7 @@ class LeadsController < ApplicationController
   end
 
   def create
-    @lead = Lead.new(params[:lead]) 
+    @lead = Lead.new(lead_params) 
 
     if @lead.save
       redirect_to action: 'confirmation'
@@ -15,4 +15,10 @@ class LeadsController < ApplicationController
 
   def confirmation
   end
+
+  private
+
+    def lead_params
+      params.fetch(:lead, {}).permit(:nome, :email)
+    end
 end
